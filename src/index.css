@@ -1,0 +1,156 @@
+body{
+    background-image: url(assets/_.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items:first baseline;
+}
+.to-do-list{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+@keyframes myAnimation {
+    0% { /* Starting point (e.g., 0% of the animation) */
+        opacity: 0; 
+        transform: translateY(-50px); 
+    }
+    100% { /* Ending point (e.g., 100% of the animation) */
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+h1{
+    color: black;
+    font-size: 5em;
+    font-family:cursive;
+    font-weight: bold;
+    text-align: center;
+    animation: myAnimation 1s ease-in-out; 
+}
+@keyframes typewriter {
+    from {
+      width: 0; 
+    }
+    to {
+      width: 100%; 
+    }
+}  
+@keyframes blinkTextCursor {
+    from { border-right-color: #000; }
+    to { border-right-color: transparent; }
+}
+h2{
+    color: black;
+    font-size: 2.5em;
+    font-family:cursive;
+    font-weight: bold;
+
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent wrapping */
+    margin: 0 auto; /* Center the text */
+    letter-spacing: .15em; /* Adjust spacing for better effect */
+    animation: 
+    typewriter 3s steps(40, end), 
+    blinkTextCursor .5s infinite; 
+    animation: typewriter 10s infinite; 
+}
+.username{
+    font-size: 2em;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+}
+.date{
+    font-size: 2em;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+}
+input[type="text"]{
+    font-size: 1.6rem;
+    font-family: cursive;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid hsla(0, 0%, 80%, 0.5);
+    border-radius: 5px;
+    color: hsla(0, 0%, 0%, 0.5);
+} 
+input[type="date"]{
+    font-size: 1.6rem;
+    font-family: cursive;
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid hsla(0, 0%, 80%, 0.5);
+    border-radius: 5px;
+    color: hsla(0, 0%, 0%, 0.5);
+}
+button[type="submit"]{
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-family: cursive;
+}
+button{
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+} 
+.add-button{
+    background-color: rgb(33, 185, 33);
+}
+.add-button:hover{
+    background-color: rgb(13, 154, 13);
+}
+.done-button:hover{
+    background-color: gray;
+}
+.delete-button:hover{
+    background-color: gray;
+}
+.up-button:hover{
+    background-color: gray;
+}
+.down-button:hover{
+    background-color: gray;
+}
+ol{
+    padding: 0px;
+}
+li{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 3px solid hsla(0, 0%, 85%, 0.75);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.text{
+    flex: 1;/*same as these three lines
+        => flex-grow: 1;
+           flex-shrink: 1 
+           flex-basis: 0% */
+}
+.delete-button, .move-button{
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    margin-left: 10px;
+} 
