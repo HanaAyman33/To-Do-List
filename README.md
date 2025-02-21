@@ -1,6 +1,6 @@
 # React ToDoList DONE✅
 
-This project is a simple to-do list application built with React. 
+This frontned project is a simple to-do list application built with React. 
 
 **Features:**
 
