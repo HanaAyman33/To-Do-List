@@ -44,5 +44,3 @@ to-do-list/
 ├── README.MD
 ├── vite.config.js
 ├── eslint.config.js
-
-[text](../../../Desktop/ToDoList.mov)
